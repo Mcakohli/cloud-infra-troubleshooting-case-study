@@ -98,27 +98,5 @@ Upon deployment, the external web application was completely unreachable via sta
 
 &#x20;    rm -f /etc/nginx/sites-enabled/default
 
-&#x20;    sed -i '/location \\/ {/a \\        proxy\_pass \[http://127.0.0.1:8000](http://127.0.0.1:8000);' /etc/nginx/sites-available/app
-
-&#x20;    nginx -t \&\& systemctl reload nginx
-
-&#x20;    ```
-
-
-
-\---
-
-
-
-\## Verification \& Health Checks
-
-\## Verification
-
-!\[Application Live Verification](docs/live\_verification.png)
-
-\* \*\*Internal Backend Health:\*\* `curl -v http://127.0.0.1:8000/` returned `HTTP/1.0 200 OK`.
-
-\* \*\*Ingress Verification:\*\* `curl -v http://<INSTANCE\_IP>/` returned `HTTP/1.1 200 OK` routed via Nginx.
-
-\* \*\*Process Persistence:\*\* Verified `systemctl is-enabled app.service nginx` both returned `enabled`.
+&#x20;    sed -i '/location \\/ {/a \\
 
