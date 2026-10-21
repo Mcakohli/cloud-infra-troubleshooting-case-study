@@ -124,5 +124,5 @@ Upon deployment, the external web application was completely unreachable via sta
 
 
 
-!\[Application Live Verification](docs/live\_verification.png)
+!\[Application Live Verification](Docs/live\_verification.png)
 
