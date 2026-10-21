@@ -123,7 +123,6 @@ Upon deployment, the external web application was completely unreachable via sta
 \### Live Deployment Verification
 
 
-https://github.com/Mcakohli/cloud-infra-troubleshooting-case-study/commit/8e6bb6698b8e5693e63b449684c5ce35c5ee1df2
 
 <img src="./Docs/live_verification.png" alt="Application Live Verification" width="850" />
 
